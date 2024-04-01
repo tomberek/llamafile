@@ -4,14 +4,13 @@ runCommand "tiny" { } ''
   cat > $out/bin/tiny <<'EOF'
   #!/bin/sh
   exec "${inputs.self.packages.${system}.apeloader}/bin/ape" "${inputs.tiny.outPath}" \
+   -e \
    -p "The following is a conversation between a Researcher and their helpful AI
    Assistant which is a large language model trained on the
    sum of human knowledge.
    Researcher: Good morning.
    Assistant: How can I help you today?
-   Researcher: $@" \
-   --silent-prompt \
-   --no-display-prompt \
+   Researcher: $@\n" \
    --log-disable \
    --interactive --batch_size 1024 --ctx_size 4096 \
    --keep -1 --temp 0 --mirostat 2 --in-prefix ' ' \
