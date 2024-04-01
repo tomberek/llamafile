@@ -1,0 +1,40 @@
+{
+  "nodes": {
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1711995956,
+        "narHash": "sha256-gbrxke/RQbhrpbrtb7D0jNatA/e7XB7lAD9ACrVuY/U=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "fbe9ddc9a080a3b0bcdadac1360863bf7b9a5975",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "release-23.11",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "nixpkgs": "nixpkgs",
+        "tiny": "tiny"
+      }
+    },
+    "tiny": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-zlFv8QJIEHVjOcwfiYZDxdg0UcCwpymOA8uQNMG+MOo=",
+        "type": "file",
+        "url": "https://huggingface.co/jartine/TinyLlama-1.1B-Chat-v1.0-GGUF/resolve/main/TinyLlama-1.1B-Chat-v1.0.Q5_K_M.llamafile"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://huggingface.co/jartine/TinyLlama-1.1B-Chat-v1.0-GGUF/resolve/main/TinyLlama-1.1B-Chat-v1.0.Q5_K_M.llamafile"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
